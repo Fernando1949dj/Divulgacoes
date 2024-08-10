@@ -1,9 +1,24 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<title>Text</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vídeo de Fundo com Botão</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<button onclick="location.href='https://www.youtube.com';">Ir para google</button>
+  <!-- Adicione o vídeo de fundo -->
+  <video autoplay loop muted playsinline>
+    <source src="Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Adicione os elementos sobre o vídeo -->
+  <div class="overlay">
+    <h1>Pagina Inicial</h1>
+    <p></p>
+  </div>
 </body>
 </html>
