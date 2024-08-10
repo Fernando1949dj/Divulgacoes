@@ -1,0 +1,5 @@
+git add .
+
+git commit -m "Novo Commit"
+
+git push
