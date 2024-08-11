@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Remover todos os arquivos do repositório local
+git rm -r .
+
+# Adicionar os novos arquivos
+git add .
+
+# Fazer um commit
+git commit -m "Novo Commit"
+
+# Pull latest changes from remote repository
+git pull
+
+# Push changes to remote repository
+git push --force
