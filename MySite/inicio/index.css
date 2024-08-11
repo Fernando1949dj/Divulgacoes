@@ -7,6 +7,13 @@
   color: #fff;
 }
 
+.subheading {
+  font-size: 32px; /* 1.5 times smaller than the heading */
+  margin-top: 30px; /* add 30px margin top to create space */
+  text-align: left; /* align to the left side of the screen */
+  color: #fff; /* keep the same color as the heading */
+}
+
 body { 
   overflow: hidden; 
   position: relative; 
