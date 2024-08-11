@@ -4,17 +4,22 @@
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
   color: #fff;
 }
 
 body { 
   overflow: hidden; 
   position: relative; 
+  /* desativar zoom em dispositivos móveis */
+  touch-action: none; 
+  /* desativar zoom em alguns navegadores */
+  user-zoom: none; 
+  /* desativar zoom em alguns navegadores */
+  -webkit-user-select: none; 
+  /* desativar zoom em alguns navegadores */
+  -webkit-touch-callout: none; 
+  /* desativar zoom em alguns navegadores */
+  -moz-user-select: none; 
 }
 
 video { 
@@ -28,9 +33,9 @@ video {
 }
 
 .overlay { 
-  position: absolute; 
-  top: 40; 
-  left: 40; 
+  position: relative; 
+  top: 0; 
+  left: 0; 
   width: 100%; 
   height: 100%; 
   display: flex; 
@@ -38,4 +43,12 @@ video {
   align-items: center; 
   color: #fff; 
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.scrollable-content {
+  position: relative; 
+  overflow-y: auto; 
+  height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box; 
 }
